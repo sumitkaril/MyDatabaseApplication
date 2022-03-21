@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <EditText
+           android:id="@+id/name"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter Name"/>
+
+       <EditText
+           android:id="@+id/phone"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="phone"
+           android:hint="Enter Phone No."/>
+
+       <EditText
+           android:id="@+id/address"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter Address"/>
+
+       <Button
+           android:id="@+id/btn_insert_data"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Insert Data"/>
+
+       <Button
+           android:id="@+id/btn_data_list"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Show the Db List"/>
+
+       <EditText
+           android:id="@+id/et_raw_id"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter ID which you want to delete"/>
+
+       <Button
+           android:id="@+id/btn_delete_raw_from_database"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Delete Raw"/>
+   </LinearLayout>
+
+</RelativeLayout>
